@@ -37,36 +37,36 @@ class Neighborhood{
     return [...new Set(meals)];
   }
 }
-//
-// class Customer{
-//   constructor(name, neighborhoodId){
-//     this.id = ++customerIds;
-//     this.name = name;
-//     this.neighborhoodId = neighborhoodId
-//
-//     store.customers.push(this)
-//   }
-//
-//   deliveries(){
-//     return store.deliveries.filter(
-//       function(delivery){
-//         return delivery.customerId === this.id
-//       }.bind(this)
-//     )
-//
-//     meals(){
-//       return this.deliveries().map(
-//         function(delivery){
-//           return delivery.meal()
-//         }
-//       )
-//     }
-//
-//   totalSpent(){
-//     return
-//   }
-// }
-//
+
+class Customer{
+  constructor(name, neighborhoodId){
+    this.id = ++customerIds;
+    this.name = name;
+    this.neighborhoodId = neighborhoodId
+
+    store.customers.push(this)
+  }
+
+  deliveries(){
+    return store.deliveries.filter(
+      function(delivery){
+        return delivery.customerId === this.id
+      }.bind(this)
+    )
+
+    meals(){
+      return this.deliveries().map(
+        function(delivery){
+          return delivery.meal()
+        }
+      )
+    }
+
+  totalSpent(){
+    return
+  }
+}
+
 // class Meal{
 //   constructor(title, price){
 //     this.id = ++mealIds;
