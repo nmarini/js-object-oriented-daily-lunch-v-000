@@ -29,7 +29,11 @@ class Neighborhood{
   }
 
   meals(){
-    return
+    return store.deliveries().map(
+      function(delivery){
+        return delivery.meal()
+      }
+    )
   }
 }
 
@@ -43,12 +47,19 @@ class Customer{
   }
 
   deliveries(){
-    return
-  }
+    return store.deliveries.filter(
+      function(delivery){
+        return delivery.customerId === this.id
+      }.bind(this)
+    )
 
-  meals(){
-    return
-  }
+    meals(){
+      return store.deliveries().map(
+        function(delivery){
+          return delivery.meal()
+        }
+      )
+    }
 
   totalSpent(){
     return
@@ -88,15 +99,15 @@ class Delivery{
     store.deliveries.push(this);
   }
 
-  meals(){
+  meal(){
     return
   }
 
-  customers(){
+  customer(){
     return
   }
 
-  neighborhoods(){
+  neighborhood(){
     return
   }
 }
