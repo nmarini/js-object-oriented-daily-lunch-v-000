@@ -11,7 +11,7 @@ let deliverIds = 0
 //     this.name = name;
 //     store.neighborhoods.push(this);
 //   }
-// 
+//
 //   deliveries(){
 //     return store.deliveries.filter(
 //       function(delivery){
@@ -19,7 +19,7 @@ let deliverIds = 0
 //       }.bind(this)
 //     )
 //   }
-// 
+//
 //   customers(){
 //     return store.customers.filter(
 //       function(customer){
@@ -27,7 +27,7 @@ let deliverIds = 0
 //       }.bind(this)
 //     )
 //   }
-// 
+//
 //   meals(){
 //     const meals = this.deliveries().map(
 //       function(delivery){
