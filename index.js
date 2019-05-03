@@ -68,68 +68,68 @@ class Customer{
   }
 }
 
-class Meal{
-  constructor(title, price){
-    this.id = ++mealIds;
-    this.title = title;
-    this.price = price;
-
-    store.meals.push(this);
-  }
-
-  deliveries(){
-    return store.deliveries.filter(
-      function(delivery){
-        return delivery.customerId === this.id
-      }.bind(this)
-    )
-
-  customers(){
-    const customers = this.deliveries().map(
-      function(delivery){
-        return delivery.customer()
-      }
-    )
-    return [...new Set(customers)];
-  }
-
-  byPrice(){
-    return
-  }
-
-}
-
-class Delivery{
-  constructor(mealId, neighborhoodId, customerId){
-    this.id = ++deliveryIds;
-    this.mealId = mealId;
-    this.neighborhoodId = neighborhoodId;
-    this.customerId = customerId;
-
-    store.deliveries.push(this);
-  }
-
-  meal(){
-    return store.meals.filter(
-      function(meal){
-        return meal.id === this.mealId
-      }.bind(this)
-    )
-  }
-
-  customer(){
-    return store.customers.filter(
-      function(customer){
-        return customer.id === this.customerId
-      }.bind(this)
-    )
-  }
-
-  neighborhood(){
-    return store.neighborhoods.filter(
-      function(neighborhood){
-        return neighborhood.id === this.neighborhoodId
-      }.bind(this)
-    )
-  }
-}
+// class Meal{
+//   constructor(title, price){
+//     this.id = ++mealIds;
+//     this.title = title;
+//     this.price = price;
+//
+//     store.meals.push(this);
+//   }
+//
+//   deliveries(){
+//     return store.deliveries.filter(
+//       function(delivery){
+//         return delivery.customerId === this.id
+//       }.bind(this)
+//     )
+//
+//   customers(){
+//     const customers = this.deliveries().map(
+//       function(delivery){
+//         return delivery.customer()
+//       }
+//     )
+//     return [...new Set(customers)];
+//   }
+//
+//   byPrice(){
+//     return
+//   }
+//
+// }
+//
+// class Delivery{
+//   constructor(mealId, neighborhoodId, customerId){
+//     this.id = ++deliveryIds;
+//     this.mealId = mealId;
+//     this.neighborhoodId = neighborhoodId;
+//     this.customerId = customerId;
+//
+//     store.deliveries.push(this);
+//   }
+//
+//   meal(){
+//     return store.meals.filter(
+//       function(meal){
+//         return meal.id === this.mealId
+//       }.bind(this)
+//     )
+//   }
+//
+//   customer(){
+//     return store.customers.filter(
+//       function(customer){
+//         return customer.id === this.customerId
+//       }.bind(this)
+//     )
+//   }
+//
+//   neighborhood(){
+//     return store.neighborhoods.filter(
+//       function(neighborhood){
+//         return neighborhood.id === this.neighborhoodId
+//       }.bind(this)
+//     )
+//   }
+// }
