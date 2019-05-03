@@ -30,7 +30,7 @@ class Customer{
     this.name = name;
     this.neighborhoodId = neighborhoodId
 
-    store.customers.push(this)    
+    store.customers.push(this)
   }
 
   deliveries(){
@@ -66,7 +66,7 @@ class Meal{
   byPrice(){
     return
   }
-  
+
 }
 
 class Delivery{
