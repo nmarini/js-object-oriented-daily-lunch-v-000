@@ -109,10 +109,8 @@ class Meal{
         return b - a
       }
     )
-      }
-    )
   }
-
+  
 }
 
 class Delivery{
