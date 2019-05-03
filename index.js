@@ -100,8 +100,8 @@ class Meal{
 
   byPrice(){
     return store.meals.sort(
-      function(meal){
-          return meal.price
+      function(a, b){
+          return a.price.localCompare(b.price);
       }
     )
   }
