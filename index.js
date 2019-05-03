@@ -80,6 +80,7 @@ class Meal{
   deliveries(){
     return store.deliveries.map(
       function(delivery){
+        if delivery.mealId === this.id
         return delivery.meal()
       }.bind(this)
     )
