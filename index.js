@@ -81,8 +81,8 @@ class Meal{
     return store.deliveries.filter(
       function(delivery){
         return delivery.meailId === this.id
-      }
-    ).bind(this)
+      }.bind(this)
+    )
   }
 
   customers(){
