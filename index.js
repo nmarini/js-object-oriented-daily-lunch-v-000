@@ -28,107 +28,107 @@ class Neighborhood{
     )
   }
 
-//   meals(){
-//     const meals = this.deliveries().map(
+  meals(){
+    const meals = this.deliveries().map(
+      function(delivery){
+        return delivery.meal()
+      }
+    )
+    return [...new Set(meals)];
+  }
+}
+// 
+// class Customer{
+//   constructor(name, neighborhoodId){
+//     this.id = ++customerIds;
+//     this.name = name;
+//     this.neighborhoodId = neighborhoodId
+// 
+//     store.customers.push(this)
+//   }
+// 
+//   deliveries(){
+//     return store.deliveries.filter(
 //       function(delivery){
-//         return delivery.meal()
-//       }
+//         return delivery.customerId === this.id
+//       }.bind(this)
 //     )
-//     return [...new Set(meals)];
+// 
+//     meals(){
+//       return this.deliveries().map(
+//         function(delivery){
+//           return delivery.meal()
+//         }
+//       )
+//     }
+// 
+//   totalSpent(){
+//     return
 //   }
 // }
-
-class Customer{
-  constructor(name, neighborhoodId){
-    this.id = ++customerIds;
-    this.name = name;
-    this.neighborhoodId = neighborhoodId
-
-    store.customers.push(this)
-  }
-
-  deliveries(){
-    return store.deliveries.filter(
-      function(delivery){
-        return delivery.customerId === this.id
-      }.bind(this)
-    )
-
-    meals(){
-      return this.deliveries().map(
-        function(delivery){
-          return delivery.meal()
-        }
-      )
-    }
-
-  totalSpent(){
-    return
-  }
-}
-
-class Meal{
-  constructor(title, price){
-    this.id = ++mealIds;
-    this.title = title;
-    this.price = price;
-
-    store.meals.push(this);
-  }
-
-  deliveries(){
-    return store.deliveries.filter(
-      function(delivery){
-        return delivery.customerId === this.id
-      }.bind(this)
-    )
-
-  // customers(){
-  //   const customers = this.deliveries().map(
-  //     function(delivery){
-  //       return delivery.customer()
-  //     }
-  //   )
-  //   return [...new Set(customers)];
-  // }
-
-  byPrice(){
-    return
-  }
-
-}
-
-class Delivery{
-  constructor(mealId, neighborhoodId, customerId){
-    this.id = ++deliveryIds;
-    this.mealId = mealId;
-    this.neighborhoodId = neighborhoodId;
-    this.customerId = customerId;
-
-    store.deliveries.push(this);
-  }
-
-  meal(){
-    return store.meals.filter(
-      function(meal){
-        return meal.id === this.mealId
-      }.bind(this)
-    )
-  }
-
-  customer(){
-    return store.customers.filter(
-      function(customer){
-        return customer.id === this.customerId
-      }.bind(this)
-    )
-  }
-
-  neighborhood(){
-    return store.neighborhoods.filter(
-      function(neighborhood){
-        return neighborhood.id === this.neighborhoodId
-      }.bind(this)
-    )
-  }
-}
+// 
+// class Meal{
+//   constructor(title, price){
+//     this.id = ++mealIds;
+//     this.title = title;
+//     this.price = price;
+// 
+//     store.meals.push(this);
+//   }
+// 
+//   deliveries(){
+//     return store.deliveries.filter(
+//       function(delivery){
+//         return delivery.customerId === this.id
+//       }.bind(this)
+//     )
+// 
+//   customers(){
+//     const customers = this.deliveries().map(
+//       function(delivery){
+//         return delivery.customer()
+//       }
+//     )
+//     return [...new Set(customers)];
+//   }
+// 
+//   byPrice(){
+//     return
+//   }
+// 
+// }
+// 
+// class Delivery{
+//   constructor(mealId, neighborhoodId, customerId){
+//     this.id = ++deliveryIds;
+//     this.mealId = mealId;
+//     this.neighborhoodId = neighborhoodId;
+//     this.customerId = customerId;
+// 
+//     store.deliveries.push(this);
+//   }
+// 
+//   meal(){
+//     return store.meals.filter(
+//       function(meal){
+//         return meal.id === this.mealId
+//       }.bind(this)
+//     )
+//   }
+// 
+//   customer(){
+//     return store.customers.filter(
+//       function(customer){
+//         return customer.id === this.customerId
+//       }.bind(this)
+//     )
+//   }
+// 
+//   neighborhood(){
+//     return store.neighborhoods.filter(
+//       function(neighborhood){
+//         return neighborhood.id === this.neighborhoodId
+//       }.bind(this)
+//     )
+//   }
+// }
