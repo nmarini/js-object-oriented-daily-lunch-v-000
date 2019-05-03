@@ -83,6 +83,7 @@ class Meal{
         return delivery.customerId === this.id
       }.bind(this)
     )
+  }
 
   customers(){
     const customers = this.deliveries().map(
