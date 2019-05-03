@@ -53,7 +53,7 @@ class Meal{
     this.title = title;
     this.price = price;
 
-    store.meal.push(this);
+    store.meals.push(this);
   }
 
   deliveries(){
