@@ -16,7 +16,7 @@ class Neighborhood{
     return store.deliveries.filter(
       function(delivery){
         return delivery.neighborhoodId === this.id
-      }
+      }.bind(this)
     )
   }
 
@@ -24,7 +24,7 @@ class Neighborhood{
     return store.customers.filter(
       function(customer){
         return customer.neighborhoodId === this.id
-      }
+      }.bind(this)
     )
   }
 
@@ -51,7 +51,7 @@ class Customer{
     return store.deliveries.filter(
       function(delivery){
         return delivery.customerId === this.id
-      }
+      }.bind(this)
     )
 
     meals(){
@@ -80,7 +80,7 @@ class Meal{
     return store.deliveries.filter(
       function(delivery){
         return delivery.customerId === this.id
-      }
+      }.bind(this)
     )
 
   customers(){
@@ -112,7 +112,7 @@ class Delivery{
     return store.meals.filter(
       function(meal){
         return meal.id === this.mealId
-      }
+      }.bind(this)
     )
   }
 
@@ -120,7 +120,7 @@ class Delivery{
     return store.customers.filter(
       function(customer){
         return customer.id === this.customerId
-      }
+      }.bind(this)
     )
   }
 
@@ -128,7 +128,7 @@ class Delivery{
     return store.neighborhoods.filter(
       function(neighborhood){
         return neighborhood.id === this.neighborhoodId
-      }
+      }.bind(this)
     )
   }
 }
