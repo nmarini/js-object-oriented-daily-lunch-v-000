@@ -72,17 +72,17 @@ class Customer{
 //     this.id = ++mealIds;
 //     this.title = title;
 //     this.price = price;
-// 
+//
 //     store.meals.push(this);
 //   }
-// 
+//
 //   deliveries(){
 //     return store.deliveries.filter(
 //       function(delivery){
 //         return delivery.customerId === this.id
 //       }.bind(this)
 //     )
-// 
+//
 //   customers(){
 //     const customers = this.deliveries().map(
 //       function(delivery){
@@ -91,11 +91,11 @@ class Customer{
 //     )
 //     return [...new Set(customers)];
 //   }
-// 
+//
 //   byPrice(){
 //     return
 //   }
-// 
+//
 // }
 
 class Delivery{
