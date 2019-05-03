@@ -98,10 +98,10 @@ class Meal{
     return [...new Set(customers)];
   }
 
-  byPrice(){
+  static byPrice(){
     return store.meals.sort(
       function(a, b){
-          return a.price.localCompare(b.price);
+          return a.price.localCompare(b.price)
       }
     )
   }
