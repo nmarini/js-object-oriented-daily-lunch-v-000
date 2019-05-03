@@ -78,9 +78,9 @@ class Meal{
   }
 
   deliveries(){
-    return store.deliveries.filter(
+    return store.deliveries.map(
       function(delivery){
-        return delivery.customerId === this.id
+        return delivery.meal()
       }.bind(this)
     )
   }
