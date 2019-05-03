@@ -67,7 +67,7 @@ class Customer{
     return this.meals().reduce(
       function(meal){
         return [] + meal.price
-      }, []
+      }, 0
     )
   }
 }
