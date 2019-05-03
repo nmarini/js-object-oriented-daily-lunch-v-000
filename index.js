@@ -105,7 +105,7 @@ class Meal{
       }
     )
     return meals.sort(
-      function a, b){
+      function (a, b){
         return b - a
       }
     )
