@@ -99,11 +99,12 @@ class Meal{
   }
 
   static byPrice(){
-    return store.meals.sort(
-      function(a, b){
-          return (a.price).localCompare(b.price)
+    const meals = store.meals.map(
+      function(meal){
+          return meal.price;
       }
     )
+    return meals.sort()
   }
 
 }
