@@ -98,37 +98,37 @@ class Meal{
 
 }
 
-class Delivery{
-  constructor(mealId, neighborhoodId, customerId){
-    this.id = ++deliverIds;
-    this.mealId = mealId;
-    this.neighborhoodId = neighborhoodId;
-    this.customerId = customerId;
-
-    store.deliveries.push(this);
-  }
-
-  meal(){
-    return store.meals.filter(
-      function(meal){
-        return meal.id === this.mealId
-      }.bind(this)
-    )
-  }
-
-  customer(){
-    return store.customers.filter(
-      function(customer){
-        return customer.id === this.customerId
-      }.bind(this)
-    )
-  }
-
-  neighborhood(){
-    return store.neighborhoods.filter(
-      function(neighborhood){
-        return neighborhood.id === this.neighborhoodId
-      }.bind(this)
-    )
-  }
-}
+// class Delivery{
+//   constructor(mealId, neighborhoodId, customerId){
+//     this.id = ++deliverIds;
+//     this.mealId = mealId;
+//     this.neighborhoodId = neighborhoodId;
+//     this.customerId = customerId;
+// 
+//     store.deliveries.push(this);
+//   }
+// 
+//   meal(){
+//     return store.meals.filter(
+//       function(meal){
+//         return meal.id === this.mealId
+//       }.bind(this)
+//     )
+//   }
+// 
+//   customer(){
+//     return store.customers.filter(
+//       function(customer){
+//         return customer.id === this.customerId
+//       }.bind(this)
+//     )
+//   }
+// 
+//   neighborhood(){
+//     return store.neighborhoods.filter(
+//       function(neighborhood){
+//         return neighborhood.id === this.neighborhoodId
+//       }.bind(this)
+//     )
+//   }
+// }
