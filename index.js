@@ -11,7 +11,7 @@ class Neighborhood{
     this.name = name;
     store.neighborhoods.push(this);
   }
-  
+
   deliveries(){
     return
   }
