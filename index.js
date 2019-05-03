@@ -5,38 +5,38 @@ let customerIds = 0
 let mealIds = 0
 let deliverIds = 0
 
-// class Neighborhood{
-//   constructor(name){
-//     this.id = ++neighborhoodIds;
-//     this.name = name;
-//     store.neighborhoods.push(this);
-//   }
-//
-//   deliveries(){
-//     return store.deliveries.filter(
-//       function(delivery){
-//         return delivery.neighborhoodId === this.id
-//       }.bind(this)
-//     )
-//   }
-//
-//   customers(){
-//     return store.customers.filter(
-//       function(customer){
-//         return customer.neighborhoodId === this.id
-//       }.bind(this)
-//     )
-//   }
-//
-//   meals(){
-//     const meals = this.deliveries().map(
-//       function(delivery){
-//         return delivery.meal()
-//       }
-//     )
-//     return [...new Set(meals)];
-//   }
-// }
+class Neighborhood{
+  constructor(name){
+    this.id = ++neighborhoodIds;
+    this.name = name;
+    store.neighborhoods.push(this);
+  }
+
+  deliveries(){
+    return store.deliveries.filter(
+      function(delivery){
+        return delivery.neighborhoodId === this.id
+      }.bind(this)
+    )
+  }
+
+  customers(){
+    return store.customers.filter(
+      function(customer){
+        return customer.neighborhoodId === this.id
+      }.bind(this)
+    )
+  }
+
+  meals(){
+    const meals = this.deliveries().map(
+      function(delivery){
+        return delivery.meal()
+      }
+    )
+    return [...new Set(meals)];
+  }
+}
 
 class Customer{
   constructor(name, neighborhoodId){
