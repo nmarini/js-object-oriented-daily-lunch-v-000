@@ -99,14 +99,9 @@ class Meal{
   }
 
   static byPrice(){
-    const meals = store.meals.map(
-      function(meal){
-        return meal.price
-      }
-    )
-    return meals.sort(
-      function (a, b){
-        return a < b
+    return store.meals.sort(
+      function(a, b){
+        return a.price + b.price
       }
     )
   }
