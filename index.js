@@ -104,10 +104,10 @@ class Meal{
 //     this.mealId = mealId;
 //     this.neighborhoodId = neighborhoodId;
 //     this.customerId = customerId;
-// 
+//
 //     store.deliveries.push(this);
 //   }
-// 
+//
 //   meal(){
 //     return store.meals.filter(
 //       function(meal){
@@ -115,7 +115,7 @@ class Meal{
 //       }.bind(this)
 //     )
 //   }
-// 
+//
 //   customer(){
 //     return store.customers.filter(
 //       function(customer){
@@ -123,7 +123,7 @@ class Meal{
 //       }.bind(this)
 //     )
 //   }
-// 
+//
 //   neighborhood(){
 //     return store.neighborhoods.filter(
 //       function(neighborhood){
