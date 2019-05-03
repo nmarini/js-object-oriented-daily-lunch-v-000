@@ -83,14 +83,14 @@ class Meal{
       }.bind(this)
     )
 
-  customers(){
-    const customers = this.deliveries().map(
-      function(delivery){
-        return delivery.customer()
-      }
-    )
-    return [...new Set(customers)];
-  }
+  // customers(){
+  //   const customers = this.deliveries().map(
+  //     function(delivery){
+  //       return delivery.customer()
+  //     }
+  //   )
+  //   return [...new Set(customers)];
+  // }
 
   byPrice(){
     return
