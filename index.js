@@ -53,14 +53,15 @@ class Customer{
         return delivery.customerId === this.id
       }.bind(this)
     )
+  }
 
-    // meals(){
-    //   return this.deliveries().map(
-    //     function(delivery){
-    //       return delivery.meal()
-    //     }
-    //   )
-    // }
+    meals(){
+      return this.deliveries().map(
+        function(delivery){
+          return delivery.meal()
+        }
+      )
+    }
 
   totalSpent(){
     return
