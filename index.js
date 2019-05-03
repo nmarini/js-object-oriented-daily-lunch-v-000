@@ -99,7 +99,11 @@ class Meal{
   }
 
   byPrice(){
-    return
+    return store.meals.sort(
+      function(meal){
+          returnmeal.price
+      }
+    )
   }
 
 }
