@@ -54,17 +54,17 @@ class Customer{
       }.bind(this)
     )
 
-    meals(){
-      return this.deliveries().map(
-        function(delivery){
-          return delivery.meal()
-        }
-      )
-    }
+    // meals(){
+    //   return this.deliveries().map(
+    //     function(delivery){
+    //       return delivery.meal()
+    //     }
+    //   )
+    // }
 
-  // totalSpent(){
-  //   return
-  // }
+  totalSpent(){
+    return
+  }
 }
 
 // class Meal{
