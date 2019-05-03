@@ -68,37 +68,37 @@ class Customer{
   }
 }
 
-// class Meal{
-//   constructor(title, price){
-//     this.id = ++mealIds;
-//     this.title = title;
-//     this.price = price;
-//
-//     store.meals.push(this);
-//   }
-//
-//   deliveries(){
-//     return store.deliveries.filter(
-//       function(delivery){
-//         return delivery.customerId === this.id
-//       }.bind(this)
-//     )
-//
-//   customers(){
-//     const customers = this.deliveries().map(
-//       function(delivery){
-//         return delivery.customer()
-//       }
-//     )
-//     return [...new Set(customers)];
-//   }
-//
-//   byPrice(){
-//     return
-//   }
-//
-// }
-//
+class Meal{
+  constructor(title, price){
+    this.id = ++mealIds;
+    this.title = title;
+    this.price = price;
+
+    store.meals.push(this);
+  }
+
+  deliveries(){
+    return store.deliveries.filter(
+      function(delivery){
+        return delivery.customerId === this.id
+      }.bind(this)
+    )
+
+  customers(){
+    const customers = this.deliveries().map(
+      function(delivery){
+        return delivery.customer()
+      }
+    )
+    return [...new Set(customers)];
+  }
+
+  byPrice(){
+    return
+  }
+
+}
+
 // class Delivery{
 //   constructor(mealId, neighborhoodId, customerId){
 //     this.id = ++deliveryIds;
