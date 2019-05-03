@@ -62,9 +62,9 @@ class Customer{
       )
     }
 
-  totalSpent(){
-    return
-  }
+  // totalSpent(){
+  //   return
+  // }
 }
 
 // class Meal{
