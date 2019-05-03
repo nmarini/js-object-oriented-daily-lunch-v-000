@@ -1,13 +1,13 @@
 
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
-let neighborhoodId = 0
-let customerId = 0
-let mealId = 0
-let deliverId = 0
+let neighborhoodIds = 0
+let customerIds = 0
+let mealIds = 0
+let deliverIds = 0
 
 class Neighborhood{
   constructor(name){
-    this.id = ++neighborhoodId;
+    this.id = ++neighborhoodIds;
     this.name = name;
     store.neighborhoods.push(this);
   }
@@ -27,7 +27,7 @@ class Neighborhood{
 
 class Customer{
   constructor(name, neighborhoodId){
-    this.id = ++customerId;
+    this.id = ++customerIds;
     this.name = name;
     this.neighborhoodId = neighborhoodId
 
@@ -49,7 +49,7 @@ class Customer{
 
 class Meal{
   constructor(title, price){
-    this.id = ++mealId;
+    this.id = ++mealIds;
     this.title = title;
     this.price = price;
 
@@ -72,7 +72,7 @@ class Meal{
 
 class Delivery{
   constructor(mealId, neighborhoodId, customerId){
-    this.id = ++deliverId;
+    this.id = ++deliverIds;
     this.mealId = mealId;
     this.neighborhoodId = neighborhoodId;
     this.customerId = customerId;
