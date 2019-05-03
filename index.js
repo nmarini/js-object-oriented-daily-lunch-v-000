@@ -28,15 +28,15 @@ class Neighborhood{
     )
   }
 
-  meals(){
-    const meals = this.deliveries().map(
-      function(delivery){
-        return delivery.meal()
-      }
-    )
-    return [...new Set(meals)];
-  }
-}
+//   meals(){
+//     const meals = this.deliveries().map(
+//       function(delivery){
+//         return delivery.meal()
+//       }
+//     )
+//     return [...new Set(meals)];
+//   }
+// }
 
 class Customer{
   constructor(name, neighborhoodId){
