@@ -101,7 +101,7 @@ class Meal{
   byPrice(){
     return store.meals.sort(
       function(meal){
-          returnmeal.price
+          return meal.price
       }
     )
   }
