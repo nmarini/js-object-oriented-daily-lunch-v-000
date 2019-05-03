@@ -78,4 +78,16 @@ class Delivery{
 
     store.deliveries.push(this);
   }
+
+  meals(){
+    return
+  }
+
+  customers(){
+    return
+  }
+
+  neighborhoods(){
+    return
+  }
 }
