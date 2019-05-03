@@ -110,7 +110,7 @@ class Meal{
       }
     )
   }
-  
+
 }
 
 class Delivery{
