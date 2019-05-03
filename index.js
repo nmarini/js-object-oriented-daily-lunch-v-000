@@ -15,7 +15,7 @@ class Neighborhood{
   }
 
   customers(){
-    return  
+    return
   }
 
   meals(){
