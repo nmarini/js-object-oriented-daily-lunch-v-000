@@ -43,17 +43,17 @@ class Neighborhood{
 //     this.id = ++customerIds;
 //     this.name = name;
 //     this.neighborhoodId = neighborhoodId
-// 
+//
 //     store.customers.push(this)
 //   }
-// 
+//
 //   deliveries(){
 //     return store.deliveries.filter(
 //       function(delivery){
 //         return delivery.customerId === this.id
 //       }.bind(this)
 //     )
-// 
+//
 //     meals(){
 //       return this.deliveries().map(
 //         function(delivery){
@@ -61,12 +61,12 @@ class Neighborhood{
 //         }
 //       )
 //     }
-// 
+//
 //   totalSpent(){
 //     return
 //   }
 // }
-// 
+//
 class Meal{
   constructor(title, price){
     this.id = ++mealIds;
