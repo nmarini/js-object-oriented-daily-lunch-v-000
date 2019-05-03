@@ -78,7 +78,7 @@ class Delivery{
     this.customerId = customerId;
 
     store.deliveries.push(this);
-  }
+  }.bind(this)
 
   meals(){
     return
